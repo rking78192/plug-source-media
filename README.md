@@ -8,6 +8,7 @@ Served via GitHub Pages: **https://rking78192.github.io/plug-source-media/**
 - `models/e1/` — Engine 1 compartment and pump-panel photos
 - `models/l1/` — Ladder 1 compartment photos
 - `models/stations/` — Station 1–5 popup logos (WebP, transparent background)
+- `erg/` — ERG2024 compact JSON (`erg2024-v481.json`) and a backup copy of the official English PDF
 - `models/*.glb` — apparatus 3D models
 
 ## Adding new photos
