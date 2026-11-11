@@ -9,6 +9,7 @@ Served via GitHub Pages: **https://rking78192.github.io/plug-source-media/**
 - `models/l1/` — Ladder 1 compartment photos
 - `models/stations/` — Station 1–5 popup logos (WebP, transparent background)
 - `erg/` — ERG2024 compact JSON (`erg2024-v481.json`) and a backup copy of the official English PDF
+- `ocr/` — Tesseract.js 7.0.0 (tesseract.min.js, worker.min.js), LSTM wasm cores, and `eng.traineddata.gz` (4.0.0_best_int) for on-device ERG placard reading
 - `models/*.glb` — apparatus 3D models
 
 ## Adding new photos
