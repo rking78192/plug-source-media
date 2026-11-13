@@ -1,0 +1,57 @@
+Fire engine pumper.glb — Innerscene CC0 (public domain).
+https://www.innerscene.com/tools/library/3d-parts/fire-engine-pumper-ad69949b
+No credit required; hosted locally as models/pumper.glb for Plug Source offline/PWA use.
+
+Fire ladder truck ladder.glb — Innerscene CC0 (public domain).
+https://www.innerscene.com/tools/library/3d-parts/fire-ladder-truck-172a910b
+No credit required; hosted locally as models/ladder.glb for Plug Source offline/PWA use.
+
+pumper-revere.glb — derivative of pumper.glb (CC0): recolored materials (Revere-style red, white stripe,
+red wheels) plus simple "REVERE"/door decal quads, approximating Revere MA E-One pumpers seen in
+Greenwood Emergency Vehicles' Sept 2026 delivery photos. Not CAD of the actual apparatus. (v4.48)
+
+v4.49: pumper-revere.glb rebuilt from pumper.glb (CC0): passenger-side pump panel/gauges/valves REMOVED
+(driver-side only, matching Revere's E-One Typhoons), brushed-stainless driver pump panel + Darley 1250 GPM label,
+red/yellow rear chevrons, black Line-X steps, red/white warning lenses, E-ONE front badge, lower white stripe.
+Reference: greenwoodev.com/revere-ma-two-2-e-one-custom-pumpers/ (12 delivery photos), revere.org news 2026-09-14.
+GLBs quantized + WebP textures (gltf-transform). Unused raw pumper.glb no longer shipped. Approximation, not CAD.
+
+v4.50: Revere markings re-laid to match the Greenwood Sept 2026 delivery photo of Engines 2/4: white "REVERE" under the
+windshield (was mirrored), Revere Fire patch (red shield, gold edge, REVERE / FIRE / EST. 1885, city seal center) on the
+front cab corner across the stripe, official City of Revere seal on the cab door (vector seal.svg from revere.org site theme,
+files.aptuitivcdn.com/GB7r14nbKy-1182/theme/custom/images/seal.1784136271.svg), "ENGINE" on the rear cab door.
+Patch is redrawn from the photo (no official patch artwork published by the city); seal is the city's own artwork.
+Passenger-side pump panel remains removed (0 pump meshes on passenger side).
+
+v4.51: Markings re-grounded on a clear user photo of Revere Engine 3 (E-One Typhoon). Fire patch EST. 1885
+confirmed from that photo; patch asset is a photo-matched redraw (source crop ~70px, too soft to ship raw)
+with the official City of Revere seal composited in the center. Front REVERE + side ENGINE (no unit number)
+photo-matched; ENGINE moved above the white stripe. Passenger-side pump panel remains removed. Photo crops in
+build workspace logo-crops/. Still Innerscene CC0 pumper.glb restyle — not CAD / not PicReviver mesh.
+
+v4.52: Per-engine unit numbers (1–5) baked into models/pumper-revere-e1.glb … e5.glb (fallback
+pumper-revere.glb = Engine 3). Front: large white digit on driver-side corner beside the grille.
+Cab sides: "ENGINE" stacked over the unit digit (photo layout from Engine 3). Same Revere Fire
+patch / City of Revere seal / REVERE front lettering as v4.51; passenger pump panel still removed.
+Still Innerscene CC0 pumper.glb restyle — not CAD / not PicReviver mesh.
+
+v4.64: Engine 1 only is replaced by a photogrammetry scan, models/engine1/engine1.glb
+(Draco, KHR_draco_mesh_compression, decoder vendored at vendor/draco/1.5.6/ for model-viewer 3.5.0).
+The supplied file was engine1-web-draco.glb, sha256 754cd8f6f83009f1c4b72e7b2d5f9ebac46634cb9500eb229b2086141ccd2184,
+1,606,521 triangles. Geometry bytes are unchanged. The 4096 JPEG texture was re-encoded
+(ffmpeg q:v 3, SSIM 0.990, PSNR 45.6 dB) so the static folder fits a 25MB host, and
+KHR_materials_unlit was added so the baked photo is not relit. No triangles were removed.
+Ground and background scan artifacts are still in the mesh. Compartment marker positions
+are approximate, from visual inspection, not a survey. The old stand-in models/pumper-revere-e1.glb
+was removed. models/pumper-revere.glb was removed because it was byte-identical to
+models/pumper-revere-e3.glb; the viewer fallback now points at the Engine 3 file.
+Engines 2–5 and both ladders are the same stand-in GLBs as v4.63.
+
+v4.65: Driver and passenger hotspot sides were swapped after a live check. Front-to-back order and rear photo 4 were not swapped. The scan was also cropped: bay floor, side-wall debris outside the body, and cab-roof spikes above the local roof were removed. Ladders, hoses, lights, and the body roof sheet were kept. No replacement roof was modeled. UV and the re-encoded 4096 JPEG were kept. Geometry was re-encoded with Draco (position 14-bit, UV 12-bit).
+
+v4.93: Engine 1 uses models/engine1/engine1.glb, cleaned from the v4.73 plugsource1 photogrammetry
+scan (itself the v4.65 cropped + illustrated model). 356 zero-area triangles were removed from the
+textured scan; illustrative roof/ladder and reconstructed body/glazing/grille/trim/panel/gauge/fitting/cavity
+were kept. Geometry is Draco-compressed (position 14-bit, UV 12-bit, encode-speed 0). The passenger-side
+pump panel is not part of this model. Decoder files live at vendor/draco/1.5.6/ (Draco 1.5.6, for
+model-viewer 3.5.0). Loaded in the app via psMedia().
